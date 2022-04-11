@@ -79,10 +79,20 @@ class MainActivity : AppCompatActivity() {
                 if(response.isSuccessful){
                     val resultText = response.body()?.string()
                     runOnUiThread {
-                        val temp = resultText + "Cº"
-                        binding.tvTemp.text = temp
+                        val temp = resultText
+                        val t1:String=temp.toString()
+                        val t2= t1.subSequence(0,5)
+
+
+
+                        val t3=t1.subSequence(5,10)
+                        binding.tvTemp.text =t2.padEnd(6, 'C')
+                        binding.tvHumidity.text = t3.padEnd(6, '%')
+
                     }
+
                 }
+
             } catch (i: IOException){
 
             }

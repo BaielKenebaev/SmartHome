@@ -8,8 +8,8 @@
 
     <TextView
         android:id="@+id/tvTemp"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="333dp"
+        android:layout_height="176dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         android:fontFamily="sans-serif-condensed-medium"
@@ -20,11 +20,32 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/bLed3"
         app:layout_constraintEnd_toEndOf="@+id/bSave"
-        app:layout_constraintHorizontal_bias="0.332"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="@+id/bSave"
-        app:layout_constraintTop_toBottomOf="@+id/bSave" />
+        app:layout_constraintTop_toBottomOf="@+id/bSave"
+        app:layout_constraintVertical_bias="0.066" />
+
+
+    <TextView
+        android:id="@+id/tvHumidity"
+        android:layout_width="333dp"
+        android:layout_height="176dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center"
+        android:text="0%"
+        android:textColor="@color/teal_700"
+        android:textSize="80sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/bLed3"
+        app:layout_constraintEnd_toEndOf="@+id/bSave"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/bSave"
+        app:layout_constraintTop_toBottomOf="@+id/bSave"
+        app:layout_constraintVertical_bias="0.888" />
 
     <EditText
         android:id="@+id/edIp"
